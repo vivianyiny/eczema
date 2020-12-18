@@ -519,7 +519,7 @@ def roc_curve(model_prob, X_test, y_test, y_predicted, title, dim, roc_color = "
     plt.plot(fpr_values, tpr_values, color = roc_color, label = "ROC Curve")
     plt.plot(np.linspace(0, 1, 500), np.linspace(0, 1, 500), color = baseline_color, label = "Baseline")
     rocauc_score = round(roc_auc_score(y_test, y_predicted), 5)
-    plt.title(f"{title} With A Score of {rocauc_score}", fontsize = 18)
+    #plt.title(f"{title} With A Score of {rocauc_score}", fontsize = 18)
     plt.ylabel("Sensitivity", size = 16)
     plt.xlabel("1 - Specificity", size = 16)
     plt.xticks(size = 14)
